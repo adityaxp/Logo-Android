@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PromptInputAndOptionsActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/promptToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/custom_toolbar"
+            android:elevation="5dp"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/MenuStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolBarTextView"
+                android:textSize="20sp"
+                android:text="Image options"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/toolBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_input_rectangle"
+        android:hint="Enter prompt"
+        android:padding="10dp"
+        android:gravity="top"
+        />
+
+
+</RelativeLayout>

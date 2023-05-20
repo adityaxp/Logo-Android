@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MarqueeHomeActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_loading_background"
+        android:id="@+id/menuLayout"
+        android:elevation="2dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/defaultuser"
+            android:id="@+id/userProfile"
+            android:paddingLeft="10dp"
+            app:civ_border_color="#000"
+            app:civ_border_width="1dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, User"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/welcomeTextView"
+            android:layout_toRightOf="@id/userProfile"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/welcomeTextView"
+            android:id="@+id/expandImageView"
+            android:src="@drawable/ic_expand"
+            android:layout_alignBottom="@id/welcomeTextView"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:visibility="gone"
+        android:id="@+id/optionsRelativeLayout"
+        android:layout_below="@id/menuLayout">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileLogo"
+            android:src="@drawable/ic_profile"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/yourProfileTextView"
+            android:textColor="#000"
+            android:layout_toRightOf="@id/profileLogo"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line2"
+            android:layout_below="@id/yourProfileTextView"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/aboutLogo"
+            android:layout_below="@id/line2"
+            android:src="@drawable/ic_about"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:id="@+id/aboutTextView"
+            android:fontFamily="@font/poppins"
+            android:textColor="#000"
+            android:layout_below="@id/line2"
+            android:layout_toRightOf="@id/aboutLogo"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line3"
+            android:layout_below="@id/aboutLogo"
+            android:background="@android:color/darker_gray"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/logoutLogo"
+            android:layout_below="@id/line3"
+            android:src="@drawable/ic_logout"
+            android:padding="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="#000"
+            android:id="@+id/logOutTextView"
+            android:fontFamily="@font/poppins"
+            android:layout_below="@id/line3"
+            android:layout_toRightOf="@id/aboutLogo"
+            android:padding="10dp"
+            android:textSize="16sp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/line4"
+            android:layout_below="@id/logoutLogo"
+            android:background="@android:color/darker_gray"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/optionsRelativeLayout"
+        android:id="@+id/featuresRelativeLayout"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marquee Features"
+            android:fontFamily="@font/poppins"
+            android:textSize="18sp"
+            android:id="@+id/feature"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_below="@+id/feature"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp">
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Logo Detection"
+                android:id="@+id/logoDetectionButton"
+                android:drawableTop="@drawable/ic_detect"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffff"
+                android:textSize="16.5dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Logo Generation"
+                android:id="@+id/logoGenerationButton"
+                android:drawableTop="@drawable/ic_image"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffff"
+                android:textSize="16.5dp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:padding="10dp"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="Cloud Saves"
+                android:id="@+id/editLogoButton"
+                android:drawableTop="@drawable/ic_cloud"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffff"
+                android:textSize="16.5dp"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                />
+
+            <Button
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:text="More"
+                android:id="@+id/moreButton"
+                android:drawableTop="@drawable/ic_more"
+                android:background="@drawable/custom_button"
+                android:textColor="#ffff"
+                android:textSize="16.5dp"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="10dp"
+                />
+
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/featuresRelativeLayout"
+        android:id="@+id/recentActivityLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your Recent Activity"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins"
+            android:id="@+id/recentActivityTextView"
+            android:paddingLeft="10dp"
+            android:textColor="#000"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recentActivityTextView"
+            android:padding="4dp"
+            android:id="@+id/activityRecyclerView"
+            android:scrollbars="vertical"
+            />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GeneratedLogoActivity">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolBarLayout">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/signUpToolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@drawable/custom_toolbar"
+            android:elevation="5dp"
+            android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:popupTheme="@style/MenuStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolBarTextView"
+                android:textSize="20sp"
+                android:text="Generated Logo"
+                android:layout_marginLeft="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:id="@+id/logoImageView"
+        android:layout_below="@id/toolBarLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/imagenotfound"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImageView"
+        android:id="@+id/saveLogoInCloudButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Save in Cloud"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:background="@drawable/custom_button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saveLogoInCloudButton"
+        android:id="@+id/saveLogoInternalStorageButton"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Save in Internal Storage"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="#FFF"
+        android:background="@drawable/custom_button"
+
+        />
+
+</RelativeLayout>

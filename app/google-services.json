@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214637795183",
+    "project_id": "marquee-411f8",
+    "storage_bucket": "marquee-411f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214637795183:android:84fbf0d3ebd6487f1f7a9a",
+        "android_client_info": {
+          "package_name": "com.aditya.marquee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214637795183-c3v3t90hjn08rtqbc3rh00uraj5h2ok7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM0x83ydq0fC-JMBa2Q6PR6RdHypFWNDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214637795183-c3v3t90hjn08rtqbc3rh00uraj5h2ok7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
