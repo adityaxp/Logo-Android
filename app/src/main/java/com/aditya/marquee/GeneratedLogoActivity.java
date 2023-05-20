@@ -202,7 +202,7 @@ public class GeneratedLogoActivity extends AppCompatActivity {
 
 
         try{
-            ImageGenerationTask task = new ImageGenerationTask("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", "image-alpha-001", prompt, 1);
+            ImageGenerationTask task = new ImageGenerationTask("", "image-alpha-001", prompt, 1);
             task.execute();
 
 
