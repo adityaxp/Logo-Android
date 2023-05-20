@@ -1,5 +1,5 @@
 # Marquee
-<hr>
+<hr> 
 
 Project Description: Marquee - Logo Detection, Generation, and Cloud Storage System with User Authentication
 
